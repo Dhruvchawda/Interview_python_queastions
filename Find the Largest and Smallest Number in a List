@@ -1,0 +1,21 @@
+### 10. **Find the Largest and Smallest Number in a List**
+
+**Code:**
+```python
+def find_largest_smallest(arr):
+    return max(arr), min(arr)
+
+# Example usage
+arr = [5, 10, 15, 2, 7]
+largest, smallest = find_largest_smallest(arr)
+print(f"Largest: {largest}, Smallest: {smallest}")
+```
+
+**Explanation:**
+- This function finds the largest and smallest numbers in a list using Python's built-in `max()` and `min()` functions.
+
+**Use case:**
+- Useful in statistics, analysis, and algorithms where finding extremes in datasets is necessary.
+
+
+
