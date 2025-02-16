@@ -1,0 +1,21 @@
+### 6. **Sum of Digits of a Number**
+
+**Code:**
+```python
+def sum_of_digits(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+# Example usage
+print(sum_of_digits(123))  # Output: 6
+```
+
+**Explanation:**
+- The sum of digits is computed by extracting each digit and adding it to a running total.
+
+**Use case:**
+- This operation is commonly used in number-based problems, checksum calculations, and data validation.
+
