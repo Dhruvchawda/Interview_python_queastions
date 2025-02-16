@@ -1,0 +1,22 @@
+### 4. **Prime Number**
+
+**Code:**
+```python
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Example usage
+print(is_prime(7))  # Output: True
+```
+
+**Explanation:**
+- A prime number is a number greater than 1 that has no divisors other than 1 and itself.
+- We check divisibility from 2 to the square root of `n` to optimize the check.
+
+**Use case:**
+- Prime numbers are used in encryption algorithms (RSA), hashing, and security protocols.
