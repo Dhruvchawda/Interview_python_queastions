@@ -1,0 +1,20 @@
+### 7. **Reverse a Number**
+
+**Code:**
+```python
+def reverse_number(n):
+    reversed_num = 0
+    while n > 0:
+        reversed_num = reversed_num * 10 + n % 10
+        n //= 10
+    return reversed_num
+
+# Example usage
+print(reverse_number(123))  # Output: 321
+```
+
+**Explanation:**
+- The function reverses a number by extracting digits and placing them in reverse order.
+
+**Use case:**
+- Reversing numbers is used in many areas of data processing, such as in algorithms requiring number manipulation.
