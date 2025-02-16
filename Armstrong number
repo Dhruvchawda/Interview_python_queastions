@@ -1,0 +1,25 @@
+### 5. **Armstrong Number**
+
+**Code:**
+```python
+def is_armstrong(n):
+    num = n
+    order = len(str(n))
+    total = 0
+    while n > 0:
+        digit = n % 10
+        total += digit ** order
+        n //= 10
+    return total == num
+
+# Example usage
+print(is_armstrong(153))  # Output: True
+```
+
+**Explanation:**
+- An Armstrong number (or narcissistic number) is a number that is equal to the sum of its own digits each raised to the power of the number of digits.
+- We calculate this for each digit and compare it with the original number.
+
+**Use case:**
+- Armstrong numbers are generally used for mathematical puzzles and algorithm optimization tasks.
+
