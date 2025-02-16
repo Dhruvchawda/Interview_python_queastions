@@ -1,0 +1,26 @@
+### 8. **Count Vowels and Consonants**
+
+**Code:**
+```python
+def count_vowels_and_consonants(s):
+    vowels = "aeiouAEIOU"
+    vowels_count = consonants_count = 0
+    for char in s:
+        if char.isalpha():
+            if char in vowels:
+                vowels_count += 1
+            else:
+                consonants_count += 1
+    return vowels_count, consonants_count
+
+# Example usage
+vowels, consonants = count_vowels_and_consonants("Hello World")
+print(f"Vowels: {vowels}, Consonants: {consonants}")
+```
+
+**Explanation:**
+- This program counts the number of vowels and consonants in a string.
+- It checks if each character is a letter and whether it is a vowel or consonant.
+
+**Use case:**
+- String analysis, text processing, and natural language processing (NLP) applications often require counting vowels and consonants.
